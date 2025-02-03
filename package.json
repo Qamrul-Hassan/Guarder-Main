@@ -1,15 +1,20 @@
 {
   "name": "guarder",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
-  },
+ "scripts": {
+  "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --minify",
+  "start": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.10",
+    "postcss": "^8.4.37",
+    "autoprefixer": "^10.4.16"
   }
 }
+
